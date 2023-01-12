@@ -16,19 +16,19 @@ function exchange() {
     if (firstSelect.value === secondSelect.value) {
         hrnValue.innerHTML = dolValue.value
     }else if (firstSelect.value === "USD" && secondSelect.value === "UAH") {
-        hrnValue.innerHTML = Math.ceil(((dolValue.value * rates[firstSelect.value]) * 100)/100)
+        hrnValue.innerHTML = (((dolValue.value * rates[firstSelect.value]) * 100)/100)
     }else if (firstSelect.value === "USD" && secondSelect.value === "EUR") {
         inUah = dolValue.value * rates[firstSelect.value]
-        hrnValue.innerHTML = Math.ceil(((inUah / rates[secondSelect.value]) * 100)/100  )
+        hrnValue.innerHTML = (((inUah / rates[secondSelect.value]) * 100)/100  )
     }else if (firstSelect.value === "EUR" && secondSelect.value === "USD") {
         inUah = dolValue.value * rates[firstSelect.value]
-        hrnValue.innerHTML = Math.ceil(((inUah / rates[secondSelect.value]) * 100)/100  )
+        hrnValue.innerHTML = (((inUah / rates[secondSelect.value]) * 100)/100  )
     }else if (firstSelect.value === "EUR" && secondSelect.value === "UAH") {
-        hrnValue.innerHTML = Math.ceil(((dolValue.value * rates[firstSelect.value]) * 100)/100)
+        hrnValue.innerHTML = (((dolValue.value * rates[firstSelect.value]) * 100)/100)
     }else if (firstSelect.value === "UAH" && secondSelect.value === "USD") {
-        hrnValue.innerHTML = Math.ceil(((dolValue.value / rates[secondSelect.value]) * 100)/100)
+        hrnValue.innerHTML = (((dolValue.value / rates[secondSelect.value]) * 100)/100)
     }else if (firstSelect.value === "UAH" && secondSelect.value === "EUR") {
-        hrnValue.innerHTML = Math.ceil(((dolValue.value / rates[secondSelect.value]) * 100)/100)
+        hrnValue.innerHTML = (((dolValue.value / rates[secondSelect.value]) * 100)/100)
     }
 }
 
